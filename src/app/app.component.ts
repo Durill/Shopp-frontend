@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Shopp-frontend';
+  mainImage = 'src/app/img/shopFrontPhoto.jpg';
 }
