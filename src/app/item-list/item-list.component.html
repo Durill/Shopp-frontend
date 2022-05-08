@@ -1,7 +1,14 @@
-<div class="container" style="margin: 10px">
+<div class="container" style="text-align: center">
+  <div class="spans--above__cards">
+    <span>Bestsellers</span>
+    <span> / </span>
+    <span>Newest</span>
+    <span> / </span>
+    <span>Recommended</span>
+  </div>
   <div class="row">
-    <div class="col-3 card" *ngFor="let item of items" style="margin: 10px">
-      <img class="card-img-top" src="assets/img/noPhotoImage.jpg" alt="Card image" style="width:100%">
+    <div class="col-4 cards" *ngFor="let item of items">
+      <img class="card-img-top cards-image" src="assets/img/noPhotoImage.jpg" alt="Card image">
       <div class="card-body">
         <h4 class="card-title">{{ item.itemName }}</h4>
         <p class="card-text">{{item.price}}</p>

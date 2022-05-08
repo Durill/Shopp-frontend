@@ -6,12 +6,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ItemListComponent } from './item-list/item-list.component';
 import { HttpClientModule } from "@angular/common/http";
+import { SubscriptionComponent } from './subscription/subscription.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    ItemListComponent
+    ItemListComponent,
+    SubscriptionComponent
   ],
   imports: [
     BrowserModule,
