@@ -23,4 +23,8 @@ export class ItemListComponent implements OnInit {
     });
   }
 
+  public changeSubject(subNumber:string){
+    console.log(subNumber);
+  }
+
 }

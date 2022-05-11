@@ -17,3 +17,12 @@
   margin:10px 0px 10px 0px;
   letter-spacing: 2px;
 }
+
+.clickable-span{
+  cursor: pointer;
+}
+
+.btn--custom__color{
+  background-color: #404040;
+  border: #3f3f3f;
+}

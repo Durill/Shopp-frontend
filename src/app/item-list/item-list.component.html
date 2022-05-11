@@ -1,10 +1,10 @@
 <div class="container" style="text-align: center">
-  <div class="spans--above__cards">
-    <span>Bestsellers</span>
+  <div class="spans--above__cards" ng-controller="spanBtnController as sbc">
+    <span ng-click="sbc.changeSubject(bestsellers)" class="clickable-span">Bestsellers</span>
     <span> / </span>
-    <span>Newest</span>
+    <span ng-click="" class="clickable-span">Newest</span>
     <span> / </span>
-    <span>Recommended</span>
+    <span ng-click="" class="clickable-span">Recommended</span>
   </div>
   <div class="row">
     <div class="col-4 cards" *ngFor="let item of items">
@@ -12,7 +12,7 @@
       <div class="card-body">
         <h4 class="card-title">{{ item.itemName }}</h4>
         <p class="card-text">{{item.price}}</p>
-        <a href="#" class="btn btn-primary">See more!</a>
+        <a href="#" class="btn btn-primary btn--custom__color">See more!</a>
       </div>
     </div>
   </div>
