@@ -1,0 +1,17 @@
+.centerRight {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.mainQuote{
+  color: #404040;
+  font-size: 44px;
+  margin: 10px 0px;
+}
+
+.authorOfQuote{
+  color: #404040;
+  margin-top: 2px;
+}
