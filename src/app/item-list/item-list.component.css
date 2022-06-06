@@ -1,0 +1,28 @@
+.cards{
+  width: 30%;
+  margin: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.cards-image{
+  width:60%;
+  margin:auto;
+  display: block;
+  padding-top:10px;
+}
+
+.spans--above__cards{
+  font-weight: 650;
+  margin:10px 0px 10px 0px;
+  letter-spacing: 2px;
+}
+
+.clickable-span{
+  cursor: pointer;
+}
+
+.btn--custom__color{
+  background-color: #404040;
+  border: #3f3f3f;
+}

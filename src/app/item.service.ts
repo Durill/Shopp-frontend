@@ -8,7 +8,7 @@ import {Item} from "./item";
 })
 export class ItemService {
 
-  private baseURL = "http://localhost:8080/api/v1/allItems";
+  private baseURL = "http://localhost:8080/api/v1/newest3";
 
   constructor(private httpClient: HttpClient) { }
 
