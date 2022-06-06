@@ -7,18 +7,27 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ItemListComponent } from './item-list/item-list.component';
 import { HttpClientModule } from "@angular/common/http";
 import { SubscriptionComponent } from './subscription/subscription.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { RouterModule} from "@angular/router";
+import { MainPageComponent } from './main-page/main-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     ItemListComponent,
-    SubscriptionComponent
+    SubscriptionComponent,
+    LoginPageComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([
+      {path: '', component: MainPageComponent},
+      {path: 'login', component: LoginPageComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
