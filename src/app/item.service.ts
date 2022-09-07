@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from "@angular/common/http";
+import {HttpClient, HttpParams} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Item} from "./item";
 
@@ -8,11 +8,17 @@ import {Item} from "./item";
 })
 export class ItemService {
 
-  private baseURL = "http://localhost:8080/api/v1/newest3";
+  private newest3 = "http://localhost:8080/api/v1/newest3";
+  private detailedItemURL= "http://localhost:8080/api/v1/products";
 
   constructor(private httpClient: HttpClient) { }
 
   getItemsList(): Observable<Item[]>{
-    return this.httpClient.get<Item[]>(`${this.baseURL}`);
+    return this.httpClient.get<Item[]>(`${this.newest3}`);
+  }
+
+  getDetailedItemInfo(id:string):Observable<Item>{
+    let data = {id: id};
+    return this.httpClient.get<Item>(this.detailedItemURL, {params: data});
   }
 }
