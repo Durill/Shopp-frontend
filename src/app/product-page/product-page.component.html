@@ -1,6 +1,47 @@
-<p>item name: {{item.itemName}}</p>
-<p>desc: {{item.description}}</p>
-<p>date: {{item.itemAddedDate}}</p>
-<p>price: {{item.price}}</p>
-<p>quant: {{item.quantity}}</p>
-<p>id: {{item.id}}</p>
+<main>
+  <div class="card">
+    <div class="card__title">
+      <div class="icon">
+        <a href="#"><i class="fa fa-arrow-left"></i></a>
+      </div>
+      <h3></h3>
+    </div>
+    <div class="card__body">
+      <div class="half">
+        <div class="featured_text">
+          <h1>{{item.itemName}}</h1>
+          <p class="sub">{{item.productType}}</p>
+          <p class="price">{{item.price}}</p>
+        </div>
+        <div class="image">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/613A7vcgJ4L._SL1500_.jpg" alt="">
+        </div>
+      </div>
+      <div class="half">
+        <div class="description">
+          <p>{{item.description}}</p>
+        </div>
+        <span class="stock"><i class="fa fa-pen"></i> In stock: {{item.quantity}}</span>
+        <div class="reviews">
+          <ul class="stars">
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star-o"></i></li>
+          </ul>
+          <span>(64 reviews)</span>
+        </div>
+      </div>
+    </div>
+    <div class="card__footer">
+      <div class="recommend">
+        <p>Recommended by</p>
+        <h3>Andrew Palmer</h3>
+      </div>
+      <div class="action">
+        <button type="button">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</main>

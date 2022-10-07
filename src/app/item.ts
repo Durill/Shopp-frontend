@@ -5,4 +5,5 @@ export class Item {
   price!: number;
   quantity!: number;
   itemAddedDate!: any;
+  productType!: string;
 }
